@@ -68,11 +68,21 @@ article:nth-child(2){
     font-family: 'Alata', sans-serif;
     font-size: 12pt;
 }
+
 #atras{
     margin-top: 1em;
     position: absolute;
     right: 3%;
 }
+#atras:hover{
+    animation: anim 600ms infinite;
+}
+@keyframes anim {
+    0% {right: 3%;}
+    50% {right: 5%;}
+    100% {right: 3%;}
+}
+
 .social-icon{
     height: 30px;
     width: 30px;
