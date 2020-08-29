@@ -1,0 +1,121 @@
+body{
+    background-color: #F5F6FA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    min-height: 95vh;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    background-color: #313A46;
+    min-height: 400px;
+    min-width: 800px;
+    border-radius: 10px;
+    align-items: stretch;
+    justify-content: normal;
+    padding: 3px 10px 3px 5px;
+}
+
+/* estilos del panel, tanto del panel como de la imagen y el texto*/
+aside{
+    /*width: 300px;*/
+    max-width: 300px;
+}
+#profile-picture{
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 50%;
+    border: solid white;
+    margin: 10px 25% -25px;
+}
+aside > #titulo{
+    text-align: center;
+    font-size: 20pt;
+}
+aside > p{
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.aside-text{
+    color: white;
+    font-family: 'Alata', sans-serif;
+    font-size: 12pt;
+    word-break: break-word;
+}
+
+/*toda la seccion del texto con sus dos articulos*/
+div{
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 0 10px 10px 0;
+}
+article{
+    background-color: white;
+    flex: 1 1;
+}
+article:nth-child(2){
+    display: flex;
+}
+.article-text{
+    position: relative;
+    padding-left: 1em;
+    color: #313A46;
+    font-family: 'Alata', sans-serif;
+    font-size: 12pt;
+}
+#atras{
+    margin-top: 1em;
+    position: absolute;
+    right: 3%;
+}
+.social-icon{
+    height: 30px;
+    width: 30px;
+}
+article > h3{
+    text-decoration: underline;
+}
+/* links */
+a{
+    color: #313A46;
+
+}
+a:visited{
+    color: #313A46;
+}
+a:hover{
+    color: #192024;
+}
+
+/* table, tbody y sus hijos*/
+table{
+    display: flex;
+}
+tbody{
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+}
+tr:last-of-type{
+    flex: 1 1;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    display: flex;
+}
+tr:last-of-type > td{
+    display: inline-flex;
+    margin-right: 10px;
+    justify-content: space-evenly;
+    align-self: flex-end;
+}
+tr:last-of-type >td > a{
+    margin-left: 3px;
+}
+/* nota aparte, fue un sacrilegio modificar la tabla de esa forma usando css
+pero queria mantener un estilo "tipo tarjeta" cumpliendo lo pedido en el tp aunque
+en el resultado final no se note el uso de la tabla */
